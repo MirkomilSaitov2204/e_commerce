@@ -1,8 +1,15 @@
+<!--
+Author:W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
-    <title>Baggage Ecommerce Category Bootstrap Responsive Web Template | Home :: W3layouts</title>
+    <title>Baggage Ecommerce Category Bootstrap Responsive Web Template | About :: W3layouts</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -17,7 +24,7 @@
     </script>
     <!-- //Meta tag Keywords -->
     <!-- Custom-Files -->
-    <link rel="stylesheet" href="{{ asset('front/css/bootstrap.css') }} ">
+<link rel="stylesheet" href="{{ asset('front/css/bootstrap.css') }}">
     <!-- Bootstrap-Core-CSS -->
     <link rel="stylesheet" href="{{ asset('front/css/style.css') }}" type="text/css" media="all" />
     <!-- Style-CSS -->
@@ -31,7 +38,7 @@
 </head>
 
 <body>
-    <div class="main-sec">
+    <div class="main-sec inner-page">
         <!-- //header -->
         <header class="py-sm-3 pt-3 pb-2" id="home">
             <div class="container">
@@ -51,9 +58,20 @@
                         <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
                         <input type="checkbox" id="drop" />
                         <ul class="menu">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="about.html">About Us</a></li>
+                            <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
+                                </label>
+                                <a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul>
+                                    <li><a href="coming.html" class="drop-text">Services</a></li>
+                                    <li><a href="about.html" class="drop-text">Features</a></li>
+                                    <li><a href="single.html" class="drop-text">Single Page</a></li>
+                                </ul>
+                            </li>
                             <li><a href="shop.html">Collections</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -64,6 +82,7 @@
                             <form action="#" method="post" class="newsletter">
                                 <input class="search" type="search" placeholder="Search here..." required="">
                                 <button class="form-control btn" value=""><span class="fa fa-search"></span></button>
+
                             </form>
                         </div>
                     </div>
@@ -72,25 +91,23 @@
             </div>
         </header>
         <!-- //header -->
-        <!--/banner-->
-        <div class="banner-wthree-info container">
-            <div class="row">
-                <div class="col-lg-5 banner-left-info">
-                    <h3>The Largest Range <span>of HandBags</span></h3>
-                    <a href="shop.html" class="btn shop">Shop Now</a>
-                </div>
 
-                <div class="col-lg-7 banner-img">
-                    <img src="{{ asset('front/images/bag.png') }}" alt="part image" class="img-fluid">
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- //banner-->
     <!--/banner-bottom -->
     <section class="banner-bottom py-5">
-        <div class="container py-md-3">
+        <div class="container py-md-5">
+            <div class="row grids-wthree-info">
+                <div class="col-lg-6 bag-img">
+                    <img src="{{ asset('front/images/bag1.png') }}" class="img-fluid" alt="" />
+                </div>
+                <div class="col-lg-6 ab-info-con ab-inf-page text-left">
+                    <h4>About Our Baggage</h4>
+                    <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus libero.Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus libero.</p>
+                    <a href="single.html" class="btn shop mt-4">Read More</a>
+                </div>
+            </div>
             <div class="row grids-wthree-info text-center">
                 <div class="col-lg-4 ab-content">
                     <div class="ab-info-con">
@@ -178,79 +195,12 @@
     </section>
     <!-- //mid-section -->
 
-    <!--/gallery -->
-    <section class="banner-bottom py-5">
-        <div class="container py-md-5">
-
-
-            <div class="row">
-                <div class="col-lg-4 gallery-content-info text-center mt-lg-5">
-                    <h3 class="title-wthree mb-lg-5 mb-4">Trending Now </h3>
-                    <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus libero.</p>
-                    <a href="shop.html" class="btn shop mt-3">Shop Now</a>
-
-                </div>
-                <div class="col-lg-8 gallery-content">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 gal-img">
-                            <a href="#gal1"><img src="{{ asset('front/images/g1.jpg') }}" alt="Baggage" class="img-fluid mt-4"></a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 gal-img">
-                            <a href="#gal2"><img src="{{ asset('front/images/g2.jpg') }}" alt="Baggage" class="img-fluid mt-4"></a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 gal-img">
-                            <a href="#gal3"><img src="{{ asset('front/images/g3.jpg') }}" alt="Baggage" class="img-fluid mt-4"></a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 gal-img">
-                            <a href="#gal1"><img src="{{ asset('front/images/g4.jpg') }}" alt="Baggage" class="img-fluid mt-4"></a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 gal-img">
-                            <a href="#gal2"><img src="{{ asset('front/images/g5.jpg') }}" alt="Baggage" class="img-fluid mt-4"></a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 gal-img">
-                            <a href="#gal3"><img src="{{ asset('front/images/g6.jpg') }}" alt="Baggage" class="img-fluid mt-4"></a>
-                        </div>
-
-                    </div>
-                    <!-- gallery popups -->
-                    <!-- popup-->
-                    <div id="gal1" class="popup-effect">
-                        <div class="popup">
-                            <img src="{{ asset('front/images/g1.jpg') }}" alt="Popup image" class="img-fluid mt-4" />
-                            <a class="close" href="#gallery">&times;</a>
-                        </div>
-                    </div>
-                    <!-- //popup -->
-                    <!-- popup-->
-                    <div id="gal2" class="popup-effect">
-                        <div class="popup">
-                            <img src="{{ asset('front/images/g2.jpg') }}" alt="Popup image" class="img-fluid mt-4" />
-                            <a class="close" href="#gallery">&times;</a>
-                        </div>
-                    </div>
-                    <!-- //popup -->
-                    <!-- popup-->
-                    <div id="gal3" class="popup-effect">
-                        <div class="popup">
-                            <img src="{{ asset('front/images/g3.jpg') }}" alt="Popup image" class="img-fluid mt-4" />
-                            <a class="close" href="#gallery">&times;</a>
-                        </div>
-                    </div>
-                    <!-- //popup -->
-                    <!-- //gallery popups -->
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- //gallery-->
     <!--/newsletter -->
     <section class="newsletter-w3pvt py-5">
         <div class="container py-md-5">
             <form method="post" action="#">
                 <p class="text-center">Subscribe to the Handbags Store mailing list to receive updates on new arrivals, special offers and other discount information.</p>
-               <div class="row subscribe-sec">
+                <div class="row subscribe-sec">
                     <div class="col-md-9">
                         <input type="email" class="form-control" id="email" placeholder="Enter Your Email.." name="email" required="">
 
@@ -261,6 +211,7 @@
                     </div>
 
                 </div>
+
             </form>
         </div>
     </section>
